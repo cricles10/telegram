@@ -49,7 +49,7 @@ def process_tasks(chat_id,n):
 # In[ ]:
 
 
-@app.post("/webhook")
+@app.post("/webhook/")
 async def telegram_webhook(request):
     update = await request.json()
     if "message" in update:
